@@ -12,7 +12,7 @@ export var deletec = Vue.extend({
 				})
 				.catch((err) => {
 					console.error(err);
-					alert("Impossible de supprimer cette facture"); 
+					alert("Impossible de supprimer ce client"); 
 			});
 		}
 	},
