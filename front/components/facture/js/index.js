@@ -14,7 +14,7 @@ export var FactureComponent = Vue.extend({
 						filter: "Filtre:",
 						count:  "Affichage de {from} à {to} des {count} Factures|{count} Factures|une seule facture",
 						limit: 'Factures Par Page',
-						filterBy: ""
+					
 					},
 					headings: {
 							"totalfacture" : "Total",

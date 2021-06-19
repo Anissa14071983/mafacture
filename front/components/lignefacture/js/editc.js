@@ -12,6 +12,8 @@ export var editc = Vue.extend({
     			})
 				.catch((err) => {
 					console.error(err);
+					alert("Impossible de modifier cette ligne");
+
 				});
         }
 	},

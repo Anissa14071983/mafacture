@@ -30,12 +30,23 @@ export const edit = /*html*/
 					<input type="text" class="form-control" v-model="prop.client_id_client"/>
 					 </div>
 				</div>
-						<div class="col-lg-6">
+
+
+												<div class="col-lg-6" >
+												 <div class="mb-3">
+												 <label class="form-label">État Facture</label>
+											 		<select class="form-control" v-model="prop.etatfacture" >
+														<option>Payée</option>
+														<option>Non Payée</option>
+													 </select>
+													 </div>
+												 </div>
+				<!--		<div class="col-lg-6">
 						 <div class="mb-3">
 						 <label class="form-label">Etat Facture</label>
 						 <input type="text" class="form-control" v-model="prop.etatfacture"/>
 							</div>
-						</div>
+						</div>-->
 
 
 					</div>

@@ -6,21 +6,27 @@ export const view = /*html*/ `
                   <div class="card px-2 border-0 d-print-block">
                       <div class="card-body">
                           <div class="container-fluid">
-                            <h3 class="text-right my-5">Facture&nbsp;&nbsp;#{{ prop.idfacture }} / {{ prop.etatfacture }}</h3>
+
+                            <h3 class="text-right my-5">Facture&nbsp;&nbsp;{{ prop.idfacture }} / {{ prop.etatfacture }}</h3>
                             <hr>
                           </div>
                           <div class="container-fluid d-flex justify-content-between">
                             <div class="col-lg-3 pl-0">
-                              <p class="mt-5 mb-2"><b>Fatourty</b></p>
-                              <p>104,<br>Minare SK,<br>Canada, K1A 0G9.</p>
-                            </div>
-                            <div class="col-lg-3 pr-0">
+                            <!--  <p class="mt-5 mb-2"><b>Fatourty</b>  </p>-->
+														 	<p>	<a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo.png" alt="logo"></a></p>
+											       </div>
+                          <!--  <div class="col-lg-3 pr-0">
                               <p class="mt-5 mb-2 text-right"><b>Pour</b></p>
-                              <p class="text-right">{{ prop.client_id_client }}<br> C-201, Beykoz-34800,<br> Canada, K1A 0G9.</p>
-                            </div>
+                              <p class="text-right">Nom clent:{{ prop.nom_client }}	:{{ prop.prenom_client }}</p>
+												   </div>-->
+													 <div class="mb-3">
+													<label class="form-label">Pour</label>
+													<input readonly type="text" class="form-control" v-model="prop.prenom_client" />
+
+													 </div>
                           </div>
                           <div class="container-fluid d-flex justify-content-between">
-                            <div class="col-lg-3 pl-0">
+                            <div class="col-lg-5 pl-2">
                               <p class="mb-0 mt-5">Date Facture : {{ prop.datefacture }}</p>
                             </div>
                           </div>
@@ -71,9 +77,9 @@ export const view = /*html*/ `
                               </div -->
                           </div>
                           <div class="container-fluid mt-5 w-100">
-                            <p class="text-right mb-2">Sous Total: 12,348</p>
-                            <p class="text-right">TVA (13%) : 138</p>
-                            <h4 class="text-right mb-5">Total : {{ prop.totalfacture }}</h4>
+                           <p class="text-right mb-2"> Total hors taxes:  {{ prop.totalfacture }}DT</p>
+                            <p class="text-right">TVA :(1%) </p>
+                            <h4 class="text-right mb-5">Total : {{ prop.totalfacture }} DT </h4>
                             <hr>
                           </div>
                           <div class="container-fluid w-100 d-print-none">

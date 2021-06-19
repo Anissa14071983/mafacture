@@ -10,10 +10,12 @@ export var deletec = Vue.extend({
 				})
 				.catch((err) => {
 					console.error(err);
+					alert("Impossible de supprimer cette notification");
+
 			});
 		}
 	},
-  template: del 
+  template: del
 })
 // register
 Vue.component('del-notification-component', deletec)
