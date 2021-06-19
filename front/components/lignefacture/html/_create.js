@@ -7,7 +7,7 @@ export const create = /*html*/`
 				<button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
 			  </div>
 				 <div class="modal-body">
-			  <form v-on:submit.prevent="create()">
+			  	<form v-on:submit.prevent="create()">
 
 					<div class="row">
 						<div class="col-lg-6">
@@ -22,7 +22,7 @@ export const create = /*html*/`
 						 <div class="mb-3">
 						 <label class="form-label">Facture</label>
 						 <select class="form-control" v-model="prop.facture_id_facture" required>
-								 <option v-for="item in facts" :value="item.id_facture" > {{ item.id_facture}} : {{item.client_id_client}}</option>  
+								 <option v-for="item in facts" :value="item.id_facture" > {{ item.id_facture}} : {{item.client_id_client}}</option>
 						 </select>
 						 </div>
 					 </div>
